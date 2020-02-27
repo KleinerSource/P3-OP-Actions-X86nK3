@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Build OpenWrt
+name: 编译 OpenWrt
 
 on:
   release:
@@ -37,7 +37,7 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
-    - name: Checkout
+    - name: 检查环境
       uses: actions/checkout@master
 
     - name: Initialization environment
@@ -52,16 +52,16 @@ jobs:
         sudo -E apt-get -qq clean
         curl -fsSL https://raw.githubusercontent.com/P3TERX/dotfiles/master/.bashrc >> ~/.bashrc
 
-    - name: Clone source code
+    - name: 克隆 OpenWrt 源码
       run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
 
-    - name: Update feeds
+    - name: 更新源
       run: cd openwrt && ./scripts/feeds update -a
 
-    - name: Install feeds
+    - name: 安装源
       run: cd openwrt && ./scripts/feeds install -a
 
-    - name: Load custom configuration
+    - name: 载入固件定制自定义配置
       run: |
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
@@ -69,11 +69,11 @@ jobs:
         cd openwrt
         ../$DIY_SH
 
-    - name: SSH connection to Actions
+    - name: SSH 连接到 Actions
       uses: P3TERX/debugger-action@master
       if: env.SSH_ACTIONS == 'true'
 
-    - name: Download package
+    - name: 下载所需文件
       id: package
       run: |
         cd openwrt
@@ -82,7 +82,7 @@ jobs:
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
 
-    - name: Compile the firmware
+    - name: 编译固件
       id: compile
       run: |
         cd openwrt
@@ -90,14 +90,14 @@ jobs:
         make -j$(nproc) || make -j1 V=s
         echo "::set-output name=status::success"
 
-    - name: Upload bin directory
+    - name: 上传 Bin 目录
       uses: actions/upload-artifact@master
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
       with:
         name: OpenWrt_directory
         path: openwrt/bin
 
-    - name: Organize files
+    - name: 清理多余文件
       id: organize
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
@@ -106,9 +106,9 @@ jobs:
         echo "::set-env name=FIRMWARE::$PWD"
         echo "::set-output name=status::success"
 
-    - name: Upload firmware directory
+    - name: 上传固件目录
       uses: actions/upload-artifact@master
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: OpenWrt_firmware
+        name: OpenWrt 固件下载
         path: ${{ env.FIRMWARE }}
