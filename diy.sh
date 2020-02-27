@@ -8,7 +8,29 @@
 # Modify default IP
 sed -i 's/192.168.1.1/10.10.10.111/g' package/base-files/files/bin/config_generate
 
-# 增加软件包
+# 更改默认主题为Argon
+# sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' package/feeds/luci/luci/Makefile
+# git clone https://github.com/jerrykuku/luci-theme-argon.git -b 18.06 package/mine/luci-theme-argon_new
+# sed -i 's/luci-theme-bootstrap/luci-theme-argon_new/g' package/feeds/luci/luci/Makefile
+
+# 复杂的AdGuardHome的openwrt的luci界面
+git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/mine/luci-app-adguardhome
+# git clone https://github.com/AdguardTeam/AdGuardHome.git package/mine/AdGuardHome
+
+# KPR plus+
+# git clone https://github.com/project-openwrt/luci-app-koolproxyR.git package/mine/luci-app-koolproxyR
+
+# 网易云音乐
+# git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic.git package/mine/luci-app-unblockneteasemusic
+
+# 网易云音乐mini
+# git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic-mini.git package/mine/luci-app-unblockneteasemusic-mini
+
+# 管控上网行为
+git clone https://github.com/destan19/OpenAppFilter.git package/mine/OpenAppFilter
+
+# Rosy 主题
 git clone https://github.com/rosywrt/luci-theme-rosy.git package/luci-theme-rosy
-git clone https://github.com/AdguardTeam/AdGuardHome.git package/AdGuardHome
-git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
+
+# SmartDNS
+git clone https://github.com/RealKiro/Luci-SmartDNS.git package/mine/Luci-SmartDNS
