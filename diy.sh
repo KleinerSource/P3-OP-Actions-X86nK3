@@ -21,16 +21,16 @@ git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/mine
 # git clone https://github.com/project-openwrt/luci-app-koolproxyR.git package/mine/luci-app-koolproxyR
 
 # 网易云音乐
-git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic.git package/mine/luci-app-unblockneteasemusic
+# git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic.git package/mine/luci-app-unblockneteasemusic
 
 # 网易云音乐mini
 # git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic-mini.git package/mine/luci-app-unblockneteasemusic-mini
 
 # 管控上网行为
-git clone https://github.com/destan19/OpenAppFilter.git package/mine/OpenAppFilter
+# git clone https://github.com/destan19/OpenAppFilter.git package/mine/OpenAppFilter
 
 # Rosy 主题
 git clone https://github.com/rosywrt/luci-theme-rosy.git package/luci-theme-rosy
 
 # SmartDNS
-git clone https://github.com/RealKiro/Luci-SmartDNS.git package/mine/Luci-SmartDNS
+# git clone https://github.com/RealKiro/Luci-SmartDNS.git package/mine/Luci-SmartDNS
