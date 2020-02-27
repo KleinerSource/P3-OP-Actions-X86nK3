@@ -57,7 +57,7 @@ jobs:
 
     - name: 更新&安装源
       run: |
-        ./scripts/feeds update -a
+        cd openwrt && ./scripts/feeds update -a
         ./scripts/feeds install -a
 
     - name: 载入固件定制自定义配置
