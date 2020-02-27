@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: 编译 OpenWrt
+name: Build-OpenWrt
 
 on:
   release:
