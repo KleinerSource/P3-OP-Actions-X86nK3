@@ -23,8 +23,8 @@
 
 ## 添加软件包
 - 在 DIY 脚本中加入对指定软件包的远程仓库的克隆指令。就像下面这样：
-  git clone https://github.com/P3TERX/xxx package/xxx
-  这样做的好处是每一次编译都会拉取最新的源码。
+- `git clone https://github.com/P3TERX/xxx package/xxx`
+- 这样做的好处是每一次编译都会拉取最新的源码。
 
 ## 尾巴
 - 希望大家不要滥用免费的开发资源，需要时再编译，让开发者来充分利用才能产生更多更好的软件，这样大家才能受益。
