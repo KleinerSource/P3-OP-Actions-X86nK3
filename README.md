@@ -29,8 +29,9 @@
 ## 尾巴
 - 希望大家不要滥用免费的开发资源，需要时再编译，让开发者来充分利用才能产生更多更好的软件，这样大家才能受益。
 
+- 详细教程请访问 [P3TERX Blog](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
 
-## Acknowledgments
+## 致谢
 
 - [Microsoft](https://www.microsoft.com)
 - [Microsoft Azure](https://azure.microsoft.com)
