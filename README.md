@@ -10,12 +10,25 @@
 
 ## 首次编译
 - 在自己搭建编译环境中使用 Lean's OpenWrt 源码生成.config文件。（或使用后面进阶玩法中的云menuconfig，直接 SSH 到 Actions 进行操作）
-- TIPS: 方案默认引用 Lean 的源码，因为他的 README 影响了我开始学习编译，也就有了这个项目，而且他的源码非常的优秀。有其它需求可自行修改 work­flow 文件，方法后面的进阶使
+- TIPS: 方案默认引用 Lean 的源码，因为他的 README 影响了我开始学习编译，也就有了这个项目，而且他的源码非常的优秀。有其它需求可自行修改 work­flow 文件，方法后面的进阶使用方法.
 
 ## 使用方法
-- 将 `.config` 文件放如根目录 [Lean's OpenWrt](https://github.com/coolsnowwolf/lede) 源码. ( You can change it through environment variables in the workflow file. )
+- 将 `.config` 文件放如根目录 [Lean's OpenWrt](https://github.com/coolsnowwolf/lede) 源码. ( 可以通过 workflow 文件中的环境变量进行更改. )
 - Push `.config` 文件到 GitHub repository, 提交后查看 Acctions 会看到固件正在编译.
 - 等待完成后点击 `Artifacts` 按钮下载即可.
+
+## DIY 脚本
+- 仓库内有一个 diy.sh 文件，你可以把对源码修改的指令写到这个文件中，比如修改默认 IP、主机名、主题、添加 / 删除软件包等操作。但不仅限于这些操作，发挥你强大的想象力，可做出更强大的功能。
+- TIPS: 脚本工作目录在源码目录，内附一个修改默认 IP 的例子供参考使用。
+
+## 添加软件包
+- 在 DIY 脚本中加入对指定软件包的远程仓库的克隆指令。就像下面这样：
+  git clone https://github.com/P3TERX/xxx package/xxx
+  这样做的好处是每一次编译都会拉取最新的源码。
+
+## 尾巴
+- 希望大家不要滥用免费的开发资源，需要时再编译，让开发者来充分利用才能产生更多更好的软件，这样大家才能受益。
+
 
 ## Acknowledgments
 
