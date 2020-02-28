@@ -26,6 +26,9 @@ git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic.git pa
 # 网易云音乐mini
 # git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic-mini.git package/kleinersource/luci-app-unblockneteasemusic-mini
 
+# OpenClash
+git clone https://github.com/vernesong/OpenClash.git package/kleinersource/OpenClash
+
 # 管控上网行为
 git clone https://github.com/destan19/OpenAppFilter.git package/kleinersource/OpenAppFilter
 
