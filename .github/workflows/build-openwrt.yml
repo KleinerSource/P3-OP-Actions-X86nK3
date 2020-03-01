@@ -112,8 +112,8 @@ jobs:
         name: OpenWrt 固件下载
         path: ${{ env.FIRMWARE }}
 
-      - name: 上传 IPK 目录
-        uses: actions/upload-artifact@master
-        with:
-          name: OpenWrt IPK 下载
-          path: openwrt/bin/packages/
+    - name: 上传 IPK 目录
+      uses: actions/upload-artifact@master
+      with:
+        name: OpenWrt IPK 下载
+        path: openwrt/bin/packages/
