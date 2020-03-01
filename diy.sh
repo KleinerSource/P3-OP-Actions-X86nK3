@@ -36,4 +36,5 @@ git clone https://github.com/destan19/OpenAppFilter.git package/kleinersource/Op
 
 # 魔改 SSRP+
 # git clone https://github.com/Leo-Jo-My/luci-app-ssr-plus-Jo.git package/kleinersource/luci-app-ssr-plus-Jo
+git clone  https://github.com/Sweet-Fairy/luci-app-ssr-plus-Jo package/kleinersource/luci-app-ssr-plus-Jo
 # git clone https://github.com/Leo-Jo-My/my.git package/my
