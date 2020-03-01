@@ -39,8 +39,5 @@ git clone https://github.com/rosywrt/luci-theme-rosy.git package/kleinersource/l
 git clone https://github.com/RealKiro/Luci-SmartDNS.git package/kleinersource/Luci-SmartDNS
 
 # 魔改 SSRP+
-#git clone https://github.com/Leo-Jo-My/luci-app-ssr-plus-Jo.git package/kleinersource/luci-app-ssr-plus-Jo
-#git clone https://github.com/Leo-Jo-My/my.git package/my 
-
-#./scripts/feeds update -a
-#./scripts/feeds install -a
+# git clone https://github.com/Leo-Jo-My/luci-app-ssr-plus-Jo.git package/kleinersource/luci-app-ssr-plus-Jo
+# git clone https://github.com/Leo-Jo-My/my.git package/my 
