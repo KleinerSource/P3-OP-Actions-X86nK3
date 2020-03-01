@@ -29,7 +29,7 @@ git clone https://github.com/destan19/OpenAppFilter.git package/kleinersource/Op
 # git clone https://github.com/rosywrt/luci-theme-rosy.git package/kleinersource/luci-theme-rosy
 
 # SmartDNS
-git clone https://github.com/RealKiro/Luci-SmartDNS.git package/kleinersource/Luci-SmartDNS
+# git clone https://github.com/RealKiro/Luci-SmartDNS.git package/kleinersource/Luci-SmartDNS
 
 # KPR plus+
 # git clone https://github.com/project-openwrt/luci-app-koolproxyR.git package/kleinersource/luci-app-koolproxyR
