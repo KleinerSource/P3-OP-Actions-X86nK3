@@ -17,14 +17,8 @@ sed -i 's/192.168.1.1/10.10.10.111/g' package/base-files/files/bin/config_genera
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/kleinersource/luci-app-adguardhome
 # git clone https://github.com/AdguardTeam/AdGuardHome.git package/kleinersource/AdGuardHome
 
-# KPR plus+
-# git clone https://github.com/project-openwrt/luci-app-koolproxyR.git package/kleinersource/luci-app-koolproxyR
-
 # 网易云音乐
 git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic.git package/kleinersource/luci-app-unblockneteasemusic
-
-# 网易云音乐mini
-# git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic-mini.git package/kleinersource/luci-app-unblockneteasemusic-mini
 
 # OpenClash
 git clone https://github.com/vernesong/OpenClash.git package/kleinersource/OpenClash
@@ -38,6 +32,9 @@ git clone https://github.com/rosywrt/luci-theme-rosy.git package/kleinersource/l
 # SmartDNS
 git clone https://github.com/RealKiro/Luci-SmartDNS.git package/kleinersource/Luci-SmartDNS
 
+# KPR plus+
+# git clone https://github.com/project-openwrt/luci-app-koolproxyR.git package/kleinersource/luci-app-koolproxyR
+
 # 魔改 SSRP+
 # git clone https://github.com/Leo-Jo-My/luci-app-ssr-plus-Jo.git package/kleinersource/luci-app-ssr-plus-Jo
-# git clone https://github.com/Leo-Jo-My/my.git package/my 
+# git clone https://github.com/Leo-Jo-My/my.git package/my
