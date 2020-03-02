@@ -112,11 +112,11 @@ jobs:
         uses: actions/upload-artifact@master
         if: steps.organize.outputs.status == 'success' && !cancelled()
         with:
-          name: OpenWrt 固件下载
+          name: OpenWrt 固件包
           path: ${{ env.FIRMWARE }}
 
       - name: 上传 IPK 目录
         uses: actions/upload-artifact@master
         with:
-          name: OpenWrt IPK 下载
+          name: OpenWrt IPK 包
           path: openwrt/bin/packages/
