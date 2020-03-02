@@ -24,7 +24,7 @@ git clone https://github.com/vernesong/OpenClash.git package/kleinersource/OpenC
 git clone https://github.com/destan19/OpenAppFilter.git package/kleinersource/OpenAppFilter
 
 # Rosy 主题
-# git clone https://github.com/rosywrt/luci-theme-rosy.git package/kleinersource/luci-theme-rosy
+git clone https://github.com/rosywrt/luci-theme-rosy.git package/kleinersource/luci-theme-rosy
 
 # SmartDNS
 # git clone https://github.com/RealKiro/Luci-SmartDNS.git package/kleinersource/Luci-SmartDNS
@@ -37,14 +37,11 @@ git clone  https://github.com/lisaac/luci-lib-docker.git package/kleinersource/l
 git clone  https://github.com/lisaac/luci-app-dockerman.git package/kleinersource/luci-app-dockerman        
 
 # 魔改 SSRP+
-git clone https://github.com/Leo-Jo-My/luci-app-ssr-plus-Jo.git package/kleinersource/luci-app-ssr-plus-Jo
-git clone https://github.com/Leo-Jo-My/my.git package/my
-rm -rf package/lean/dnsforwarder
-rm -rf package/lean/simple-obfs
-rm -rf package/lean/v2ray-plugin
-# rm -rf package/my/openwrt-dnsforwarder
-# rm -rf package/my/openwrt-simple-obfs
-# rm -rf package/my/openwrt-v2ray-plugin
+# git clone https://github.com/Leo-Jo-My/luci-app-ssr-plus-Jo.git package/kleinersource/luci-app-ssr-plus-Jo
+# git clone https://github.com/Leo-Jo-My/my.git package/my
+# rm -rf package/lean/dnsforwarder
+# rm -rf package/lean/simple-obfs
+# rm -rf package/lean/v2ray-plugin
 
 # 刷新&安装源
 ./scripts/feeds update -a
