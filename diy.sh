@@ -38,6 +38,9 @@ git clone https://github.com/destan19/OpenAppFilter.git package/kleinersource/Op
 # git clone https://github.com/Leo-Jo-My/luci-app-ssr-plus-Jo.git package/kleinersource/luci-app-ssr-plus-Jo
 git clone https://github.com/Sweet-Fairy/luci-app-ssr-plus-Jo package/kleinersource/luci-app-ssr-plus-Jo
 git clone https://github.com/Leo-Jo-My/my.git package/my
+rm -rf package/my/openwrt-dnsforwarder
+rm -rf package/my/openwrt-simple-obfs
+rm -rf package/my/openwrt-v2ray-plugin
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
