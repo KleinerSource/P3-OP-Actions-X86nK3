@@ -9,8 +9,8 @@
 sed -i 's/192.168.1.1/10.10.10.111/g' package/base-files/files/bin/config_generate
 
 # 更改默认主题为 Argon
-rm -rf rm -rf package/lean/luci-theme-argon  
-git clone https://github.com/jerrykuku/luci-theme-argon.git package/kleinersource/luci-theme-argon
+rm -rf package/lean/luci-theme-argon  
+git clone https://github.com/jerrykuku/luci-theme-argon.git -b 18.06 package/kleinersource/luci-theme-argon
 # sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' package/feeds/luci/luci/Makefile
 
 
