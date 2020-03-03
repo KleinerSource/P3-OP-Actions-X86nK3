@@ -36,8 +36,8 @@ git clone https://github.com/rosywrt/luci-theme-rosy.git package/kleinersource/l
 git clone https://github.com/project-openwrt/luci-app-koolproxyR.git package/kleinersource/luci-app-koolproxyR
 
 # Docker
-git clone  https://github.com/lisaac/luci-lib-docker.git package/kleinersource/luci-lib-docker
-git clone  https://github.com/lisaac/luci-app-dockerman.git package/kleinersource/luci-app-dockerman        
+# git clone  https://github.com/lisaac/luci-lib-docker.git package/kleinersource/luci-lib-docker
+# git clone  https://github.com/lisaac/luci-app-dockerman.git package/kleinersource/luci-app-dockerman        
 
 # 魔改 SSRP+
 # git clone https://github.com/Leo-Jo-My/luci-app-ssr-plus-Jo.git package/kleinersource/luci-app-ssr-plus-Jo
