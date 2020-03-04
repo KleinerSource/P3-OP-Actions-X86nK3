@@ -46,7 +46,7 @@ git clone https://github.com/Leo-Jo-My/my.git package/my
 rm -rf package/lean/dnsforwarder
 rm -rf package/lean/simple-obfs
 rm -rf package/lean/v2ray-plugin
-#主题包
+# 主题包
 git clone https://github.com/Leo-Jo-My/luci-theme-Butterfly package/kleinersource/luci-theme-Butterfly
 git clone https://github.com/Leo-Jo-My/luci-theme-opentomato package/kleinersource/luci-theme-opentomato
 git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat package/kleinersource/luci-theme-opentomcat
