@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Build-OpenWrt
+name: Build OpenWrt
 
 on:
   repository_dispatch:
@@ -14,9 +14,9 @@ on:
     types: published
   push:
     branches:
-      - master
-#    paths:
-#      - '.config'
+      - main
+    paths:
+      - '.config'
 #  schedule:
 #    - cron: 0 8 * * 5
   watch:
@@ -43,14 +43,13 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@main
 
     - name: 初始化工作环境
       env:
         DEBIAN_FRONTEND: noninteractive
       run: |
-        sudo swapoff /swapfile
-        sudo rm -rf /swapfile /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc
+        sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc
         sudo -E apt-get -qq update
         sudo -E apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-1804)
         sudo -E apt-get -qq autoremove --purge
@@ -89,7 +88,7 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P2_SH
 
     - name: SSH 连入 Actions
-      uses: KleinerSource/debugger-action@master
+      uses: KleinerSource/debugger-action@main
       if: env.SSH_ACTIONS == 'true' || contains(github.event.action, 'ssh')
 
     - name: 下载所需文件
@@ -117,7 +116,7 @@ jobs:
       run: df -hT
 
     - name: 上传 Bin 目录
-      uses: actions/upload-artifact@master
+      uses: actions/upload-artifact@main
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
       with:
         name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
@@ -129,12 +128,11 @@ jobs:
       run: |
         cd openwrt/bin/targets/*/*
         rm -rf packages
-        # echo "::set-env name=FIRMWARE::/home/runner/work/k3-lede/k3-lede/openwrt/bin/targets/bcm53xx/generic/openwrt-bcm53xx-phicomm-k3-squashfs.trx"
         echo "::set-env name=FIRMWARE::$PWD"
         echo "::set-output name=status::success"
 
     - name: 上传固件目录
-      uses: actions/upload-artifact@master
+      uses: actions/upload-artifact@main
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
         name: OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
