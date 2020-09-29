@@ -38,6 +38,8 @@ git clone https://github.com/project-openwrt/luci-app-koolproxyR.git package/kle
 # git clone  https://github.com/lisaac/luci-lib-docker.git package/kleinersource/luci-lib-docker
 # git clone  https://github.com/lisaac/luci-app-dockerman.git package/kleinersource/luci-app-dockerman        
 
+# SSRP
+git clone https://github.com/fw876/helloworld.git package/lean
 # 刷新&安装源
 ./scripts/feeds update -a
 ./scripts/feeds install -a
