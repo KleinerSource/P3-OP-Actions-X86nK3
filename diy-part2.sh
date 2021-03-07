@@ -40,11 +40,11 @@ git clone https://github.com/project-openwrt/luci-app-koolproxyR.git package/kle
 # git clone  https://github.com/lisaac/luci-app-dockerman.git package/kleinersource/luci-app-dockerman        
 
 # SSRP
-git clone https://github.com/fw876/helloworld.git --depth=1 ./tmp/helloworld
-cp -rf ./tmp/helloworld/luci-app-ssr-plus ./package/lean/
-cp -rf ./tmp/helloworld/tcping ./package/lean/
-cp -rf ./tmp/helloworld/naiveproxy ./package/lean/
-rm -rf ./tmp/
+#git clone https://github.com/fw876/helloworld.git --depth=1 ./tmp/helloworld
+#cp -rf ./tmp/helloworld/luci-app-ssr-plus ./package/lean/
+#cp -rf ./tmp/helloworld/tcping ./package/lean/
+#cp -rf ./tmp/helloworld/naiveproxy ./package/lean/
+#rm -rf ./tmp/
 
 # 刷新&安装源
 ./scripts/feeds update -a
