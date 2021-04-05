@@ -33,7 +33,7 @@ git clone https://github.com/rosywrt/luci-theme-rosy.git package/kleinersource/l
 # git clone https://github.com/RealKiro/Luci-SmartDNS.git package/kleinersource/Luci-SmartDNS
 
 # KPR plus+
-git clone https://github.com/project-openwrt/luci-app-koolproxyR.git package/kleinersource/luci-app-koolproxyR
+# git clone https://github.com/project-openwrt/luci-app-koolproxyR.git package/kleinersource/luci-app-koolproxyR
 
 # Docker
 # git clone  https://github.com/lisaac/luci-lib-docker.git package/kleinersource/luci-lib-docker
