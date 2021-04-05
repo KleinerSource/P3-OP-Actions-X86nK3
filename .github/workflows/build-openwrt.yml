@@ -54,7 +54,6 @@ jobs:
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
 
-
     - name: 克隆 OpenWrt 源码
       working-directory: /workdir
       run: |

@@ -23,8 +23,6 @@ git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic.git pa
 # OpenClash
 git clone https://github.com/vernesong/OpenClash.git package/kleinersource/OpenClash
 
-# 添加xiaorouji大passwall源
-sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
 # PassWall
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
 
