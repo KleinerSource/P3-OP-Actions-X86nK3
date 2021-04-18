@@ -27,7 +27,7 @@ git clone https://github.com/vernesong/OpenClash.git package/kleinersource/OpenC
 git clone https://github.com/xiaorouji/openwrt-passwall.git  package/kleinersource/passwall
 
 # 管控上网行为
-git clone https://github.com/destan19/OpenAppFilter.git package/kleinersource/OpenAppFilter
+# git clone https://github.com/destan19/OpenAppFilter.git package/kleinersource/OpenAppFilter
 
 # Rosy 主题
 git clone https://github.com/rosywrt/luci-theme-rosy.git package/kleinersource/luci-theme-rosy
