@@ -45,6 +45,10 @@ git clone https://github.com/rosywrt/luci-theme-rosy.git package/kleinersource/l
 # SSRP
 git clone -b master https://github.com/fw876/helloworld package/ssrplus
 
+# vssr
+git clone https://github.com/jerrykuku/lua-maxminddb.git package/kleinersource/lua-maxminddb
+git clone https://github.com/jerrykuku/luci-app-vssr.git package/kleinersource/luci-app-vssr
+
 # 刷新&安装源
 ./scripts/feeds update -a
 ./scripts/feeds install -a
