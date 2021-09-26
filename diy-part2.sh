@@ -15,16 +15,16 @@ git clone https://github.com/jerrykuku/luci-theme-argon.git -b 18.06 package/kle
 # sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' package/feeds/luci/luci/Makefile
 
 # AdGuardHome 的 OpenWrt Luci
-git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/kleinersource/luci-app-adguardhome
+#git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/kleinersource/luci-app-adguardhome
 
 # 网易云音乐完整版
 git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic.git package/kleinersource/luci-app-unblockneteasemusic
 
 # OpenClash
-git clone https://github.com/vernesong/OpenClash.git package/kleinersource/OpenClash
+#git clone https://github.com/vernesong/OpenClash.git package/kleinersource/OpenClash
 
 # PassWall
-git clone https://github.com/xiaorouji/openwrt-passwall.git  package/kleinersource/passwall
+#git clone https://github.com/xiaorouji/openwrt-passwall.git  package/kleinersource/passwall
 
 # 管控上网行为
 # git clone https://github.com/destan19/OpenAppFilter.git package/kleinersource/OpenAppFilter
