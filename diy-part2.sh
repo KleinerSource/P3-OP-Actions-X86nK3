@@ -46,7 +46,7 @@ git clone https://github.com/rosywrt/luci-theme-rosy.git package/kleinersource/l
 # git clone https://github.com/xiaorouji/openwrt-passwall.git  package/kleinersource/passwall
 
 # SSRP
-# git clone -b master https://github.com/fw876/helloworld package/ssrplus
+git clone -b master https://github.com/fw876/helloworld package/ssrplus
 
 # vssr
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/kleinersource/lua-maxminddb
