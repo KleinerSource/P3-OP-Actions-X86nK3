@@ -15,9 +15,9 @@ on:
   workflow_dispatch:
     inputs:
       ssh:
-        description: 'SSH connection to Actions'
+        description: 'SSH 连接到 Actions'
         required: false
-        default: 'false'
+        default: 'true'
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
