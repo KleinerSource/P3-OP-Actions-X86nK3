@@ -15,7 +15,7 @@ sed -i 's/%D %V, %C/%D %V, %C, Build by KleinerSource/g' package/base-files/file
 # 更改默认主题为 Argon
 rm -rf package/lean/luci-theme-argon  
 git clone https://github.com/jerrykuku/luci-theme-argon.git -b 18.06 package/kleinersource/luci-theme-argon
-# sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' package/feeds/luci/luci/Makefile
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' package/feeds/luci/luci/Makefile
 
 # AdGuardHome 的 OpenWrt Luci
 # git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/kleinersource/luci-app-adguardhome
