@@ -11,5 +11,5 @@
 
 # Add a feed source
 # Xiaorouji Passwall
-# sed -i '$a src-git xiaorouji https://github.com/xiaorouji/openwrt-passwall.git' feeds.conf.default
+sed -i '$a src-git xiaorouji https://github.com/WYC-2020/openwrt-passwall.git' feeds.conf.default
 
