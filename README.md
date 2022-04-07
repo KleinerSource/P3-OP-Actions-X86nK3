@@ -1,5 +1,4 @@
 # Actions-OpenWrt
-## [![Build](https://img.shields.io/github/workflow/status/KleinerSource/P3-OP-Actions-X86/Build%20OpenWrt)](https://github.com/KleinerSource/P3-OP-Actions-X86/actions?query=workflow%3A%22Build+OpenWrt%22)
 
 ## ** PHICCOM K3 Build **
 ## [![Build](https://img.shields.io/github/workflow/status/KleinerSource/P3-OP-Actions-x86nK3/Build%20K3%20OpenWrt?style=for-the-badge)](https://github.com/KleinerSource/P3-OP-Actions-X86nK3/actions/workflows/K3-OpenWRT.yml) 
