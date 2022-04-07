@@ -19,6 +19,10 @@ on:
         required: false
         default: 'false'
 
+  #计划任务
+  schedule:
+     - cron: '0 3 * * 3'
+     
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
@@ -137,7 +141,7 @@ jobs:
         name: OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
 
-    - name: 上传固件到 cowtransfer
+    - name: 上传固件到 Cowtransfer
       id: cowtransfer
       if: steps.organize.outputs.status == 'success' && env.UPLOAD_COWTRANSFER == 'true' && !cancelled()
       run: |
@@ -155,7 +159,7 @@ jobs:
         echo "::warning file=wetransfer.com::$(cat wetransfer.log | grep https)"
         echo "::set-output name=url::$(cat wetransfer.log | grep https | cut -f3 -d" ")"
 
-    - name: 生成 Release tag
+    - name: 生成 Release 标签
       id: tag
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
