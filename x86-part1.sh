@@ -1,7 +1,7 @@
 #!/bin/bash
 #=================================================
 # 文件名: diy-part1.sh
-# 描述: OpenWrt DIY script part 1 (Before Update feeds)
+# 描述: OpenWrt DIY script part 1 (更新 Feed 之前)
 # Lisence: MIT
 # 作者: P3TERX
 # Blog: https://p3terx.com
@@ -37,13 +37,13 @@ git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic.git pa
 # git clone https://github.com/project-openwrt/luci-app-koolproxyR.git package/kleinersource/luci-app-koolproxyR
 
 # OpenClash
-# git clone https://github.com/vernesong/OpenClash.git package/kleinersource/OpenClash
+git clone https://github.com/vernesong/OpenClash.git package/kleinersource/OpenClash
 
 # PassWall
 git clone https://github.com/WYC-2020/openwrt-passwall.git  package/kleinersource/passwall
 
 # SSRP
-git clone -b master https://github.com/fw876/helloworld package/ssrplus
+git clone -b master https://github.com/fw876/helloworld package/kleinersource/ssrplus
 
 # vssr
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/kleinersource/lua-maxminddb

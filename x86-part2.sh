@@ -1,7 +1,7 @@
 #!/bin/bash
 #=================================================
 # 文件名: diy-part2.sh
-# 描述: OpenWrt DIY script part 2 (After Update feeds)
+# 描述: OpenWrt DIY script part 2 (更新 Feed 之后)
 # Lisence: MIT
 # 作者: P3TERX
 # Blog: https://p3terx.com
