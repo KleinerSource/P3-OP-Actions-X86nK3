@@ -31,6 +31,7 @@ env:
   UPLOAD_COWTRANSFER: true
   UPLOAD_WETRANSFER: true
   UPLOAD_RELEASE: true
+  SEND_TELEGRAM_MSG: true
   TZ: Asia/Shanghai
 
 jobs:
@@ -188,3 +189,14 @@ jobs:
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Telegram 通知
+      if: steps.compile.outputs.status == 'success' && env.SEND_TELEGRAM_MSG == 'true' && !cancelled()
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.TELEGRAM_TO }}
+        token: ${{ secrets.TELEGRAM_TOKEN }}
+        message: |
+          ${{ env.BRANCH }} 固件编译完成!
+          固件名称: ${{ env.BRANCH }}
+          Repository: ${{ github.repository }}
