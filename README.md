@@ -1,9 +1,8 @@
 # Actions-OpenWrt
 ## [![Build](https://img.shields.io/github/workflow/status/KleinerSource/P3-OP-Actions-X86/Build%20OpenWrt)](https://github.com/KleinerSource/P3-OP-Actions-X86/actions?query=workflow%3A%22Build+OpenWrt%22)
 
-## [![Build](https://img.shields.io/github/workflow/status/KleinerSource/P3-OP-Actions-x86nK3/Build%20K3%20OpenWrt?style=for-the-badge
-)](https://github.com/KleinerSource/P3-OP-Actions-X86nK3/actions/workflows/K3-OpenWRT.yml)
-4
+## [![Build](https://img.shields.io/github/workflow/status/KleinerSource/P3-OP-Actions-x86nK3/Build%20K3%20OpenWrt?style=for-the-badge)](https://github.com/KleinerSource/P3-OP-Actions-X86nK3/actions/workflows/K3-OpenWRT.yml)
+
 ## [![Build](https://img.shields.io/github/workflow/status/KleinerSource/P3-OP-Actions-x86nK3/Build%20x86%20OpenWrt?style=for-the-badge)](https://github.com/KleinerSource/P3-OP-Actions-X86nK3/actions/workflows/x86-OpenWRT.yml)
 
 [![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/P3TERX/Actions-OpenWrt/blob/master/LICENSE)
