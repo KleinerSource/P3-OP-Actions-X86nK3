@@ -9,6 +9,9 @@
 # 修改默认 IP
 # sed -i 's/192.168.1.1/10.10.10.111/g' package/base-files/files/bin/config_generate
 
+# 修改 Hostname
+sed -i "s/hostname='OpenWrt'/hostname='Phicomm-K3'/g" package/base-files/files/bin/config_generate
+
 # 修改编译信息
 sed -i 's/%D %V, %C/%D %V, %C, Build by KleinerSource/g' package/base-files/files/etc/banner
 

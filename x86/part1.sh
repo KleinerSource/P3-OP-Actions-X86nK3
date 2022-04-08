@@ -16,7 +16,6 @@ sed -i '$a src-git xiaorouji https://github.com/WYC-2020/openwrt-passwall.git' f
 # 替换原有 Argon 主题
 rm -rf package/lean/luci-theme-argon
 git clone https://github.com/jerrykuku/luci-theme-argon.git -b 18.06 package/lean/luci-theme-argon
-#git clone https://github.com/jerrykuku/luci-theme-argon.git  package/lean/luci-theme-argon
 
 # Rosy 主题
 git clone https://github.com/rosywrt/luci-theme-rosy.git package/kleinersource/luci-theme-rosy

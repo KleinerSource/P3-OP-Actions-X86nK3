@@ -16,7 +16,6 @@ sed -i '$a src-git xiaorouji https://github.com/WYC-2020/openwrt-passwall.git' f
 # 替换原有 Argon 主题
 rm -rf package/lean/luci-theme-argon
 git clone https://github.com/jerrykuku/luci-theme-argon.git -b 18.06 package/lean/luci-theme-argon
-#git clone https://github.com/jerrykuku/luci-theme-argon.git  package/lean/luci-theme-argon
 
 # Rosy 主题
 git clone https://github.com/rosywrt/luci-theme-rosy.git package/kleinersource/luci-theme-rosy
@@ -64,5 +63,3 @@ sed -i 's|^TARGET_|# TARGET_|g; s|# TARGET_DEVICES += phicomm_k3|TARGET_DEVICES 
 
 # 添加固件
 wget -nv https://github.com/Hill-98/phicommk3-firmware/raw/master/brcmfmac4366c-pcie.bin.asus-dhd24 -O package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac4366c-pcie.bin
-
-sed -i "s/hostname='OpenWrt'/hostname='Phicomm-K3'/g" package/base-files/files/bin/config_generate

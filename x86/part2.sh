@@ -7,7 +7,7 @@
 # Blog: https://p3terx.com
 #=================================================
 # 修改默认 IP
-# sed -i 's/192.168.1.1/10.10.10.111/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/10.0.0.20/g' package/base-files/files/bin/config_generate
 
 # 修改编译信息
 sed -i 's/%D %V, %C/%D %V, %C, Build by KleinerSource/g' package/base-files/files/etc/banner
