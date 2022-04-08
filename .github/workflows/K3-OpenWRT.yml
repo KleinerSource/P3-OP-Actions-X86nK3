@@ -28,8 +28,8 @@ env:
   DIY_P2_SH: K3/part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
-  UPLOAD_COWTRANSFER: true
-  UPLOAD_WETRANSFER: true
+  UPLOAD_COWTRANSFER: false
+  UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: true
   SEND_TELEGRAM_MSG: true
   TZ: Asia/Shanghai
