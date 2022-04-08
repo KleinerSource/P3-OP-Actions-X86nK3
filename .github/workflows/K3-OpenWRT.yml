@@ -21,7 +21,7 @@ on:
       upcowtransfer:
         description: '上传到 COWTRANSFER'
         required: false
-        default: 'true'
+        default: 'false'
       upwetransfer:
         description: '上传到 WETRANSFER'
         required: false
