@@ -18,6 +18,15 @@ on:
         description: 'SSH 连接到 Actions'
         required: false
         default: 'false'
+      upcowtransfer:
+        description: '上传到 COWTRANSFER'
+        required: false
+        default: 'false'
+      upwetransfer:
+        description: '上传到 WETRANSFER'
+        required: false
+        default: 'false'
+
 
   #计划任务
   schedule:
@@ -33,8 +42,6 @@ env:
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
-  UPLOAD_COWTRANSFER: true
-  UPLOAD_WETRANSFER: false
   SEND_TELEGRAM_MSG: true
   TZ: Asia/Shanghai
 
@@ -169,7 +176,7 @@ jobs:
 
     - name: 上传固件到 Cowtransfer
       id: cowtransfer
-      if: steps.organize.outputs.status == 'success' && env.UPLOAD_COWTRANSFER == 'true' && !cancelled()
+      if: steps.organize.outputs.status == 'success' && github.event.inputs.upcowtransfer == 'true' && github.event.inputs.upcowtransfer  != 'false' || contains(github.event.action, 'upcowtransfer') && !cancelled()
       run: |
         curl -fsSL git.io/file-transfer | sh
         ./transfer cow --block 2621440 -s -p 64 --no-progress ${FIRMWARE} 2>&1 | tee cowtransfer.log
@@ -178,7 +185,7 @@ jobs:
 
     - name: 上传固件到 WeTransfer
       id: wetransfer
-      if: steps.organize.outputs.status == 'success' && env.UPLOAD_WETRANSFER == 'true' && !cancelled()
+      if: steps.organize.outputs.status == 'success' && github.event.inputs.upwetransfer == 'true' && github.event.inputs.upwetransfer  != 'false' || contains(github.event.action, 'upwetransfer') && !cancelled()
       run: |
         curl -fsSL git.io/file-transfer | sh
         ./transfer wet -s -p 16 --no-progress ${FIRMWARE} 2>&1 | tee wetransfer.log
@@ -207,6 +214,5 @@ jobs:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: |
-          ${{ env.FIRMWARE }} 固件编译完成!
-          固件名称: ${{ env.FIRMWARE }}
+          x86 固件编译完成!
           Repository: ${{ github.repository }}

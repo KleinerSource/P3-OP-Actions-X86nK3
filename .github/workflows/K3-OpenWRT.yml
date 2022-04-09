@@ -206,6 +206,5 @@ jobs:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: |
-          ${{ env.FIRMWARE }} 固件编译完成!
-          固件名称: ${{ env.FIRMWARE }}
+          K3 固件编译完成!
           Repository: ${{ github.repository }}
