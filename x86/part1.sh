@@ -12,8 +12,8 @@
 # 添加 feed 源
 # Xiaorouji Passwall
 # sed -i '$a src-git xiaorouji https://github.com/xiaorouji/openwrt-passwall.git' feeds.conf.default
-sed -i '$a src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git' >>feeds.conf.default
-sed -i '$a src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall.git;packages' >>feeds.conf.default
+sed -i '$a src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git' feeds.conf.default
+sed -i '$a src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall.git;packages' feeds.conf.default
 
 # 替换原有 Argon 主题
 rm -rf package/lean/luci-theme-argon
