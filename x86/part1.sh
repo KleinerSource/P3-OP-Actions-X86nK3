@@ -6,9 +6,6 @@
 # 作者: P3TERX
 # Blog: https://p3terx.com
 #=================================================
-# Uncomment a feed source
-#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-
 # 添加 feed 源
 # Xiaorouji Passwall
 # sed -i '$a src-git xiaorouji https://github.com/xiaorouji/openwrt-passwall.git' feeds.conf.default
@@ -31,6 +28,8 @@ git clone https://github.com/vernesong/OpenClash.git package/kleinersource/OpenC
 
 # SSRP
 # git clone -b master https://github.com/fw876/helloworld package/kleinersource/ssrplus
+rm -rf package/helloworld
+git clone --depth=1 https://github.com/fw876/helloworld.git package/kleinersource/ssrplus
 
 # helloword
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/kleinersource/lua-maxminddb
