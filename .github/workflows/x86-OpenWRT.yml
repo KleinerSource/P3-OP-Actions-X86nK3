@@ -40,7 +40,7 @@ env:
   DIY_P1_SH: x86/part1.sh
   DIY_P2_SH: x86/part2.sh
   UPLOAD_BIN_DIR: false
-  UPLOAD_FIRMWARE: false
+  UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
   SEND_TELEGRAM_MSG: true
   TZ: Asia/Shanghai
