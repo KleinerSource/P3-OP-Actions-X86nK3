@@ -35,3 +35,7 @@ git clone --depth=1 https://github.com/fw876/helloworld.git package/kleinersourc
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/kleinersource/lua-maxminddb
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/kleinersource/luci-app-vssr
 
+# mosdns
+rm -rf feeds/packages/net/v2ray-geodata
+git clone https://github.com/sbwml/luci-app-mosdns package/mosdns
+git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
